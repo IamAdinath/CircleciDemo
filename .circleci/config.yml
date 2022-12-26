@@ -20,7 +20,6 @@ jobs:
     steps:
       - checkout
       - run:
-        name: Deploy Backend Stack
         command: |
           echo "Hello"
 # Orchestrate our job run sequence
