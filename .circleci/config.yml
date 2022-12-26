@@ -15,11 +15,12 @@ jobs:
       - checkout
       - run: echo "this is the test job"
   deploy:
-    name: Deploy Job
-      command: |
-        echo "hello before deploy job"
-        echo "this is the deploy job"
-        echo "wohoo your deployment complete!"
+    - run:  
+        name: Deploy Job
+        command: |
+          echo "hello before deploy job"
+          echo "this is the deploy job"
+          echo "wohoo your deployment complete!"
 # Orchestrate our job run sequence
 workflows:
   build_and_test:
