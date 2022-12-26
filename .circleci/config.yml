@@ -20,9 +20,9 @@ jobs:
     steps:
       - checkout
       - run:
-        name: deploy job
+        name: Deploy Backend Stack
         command: |
-          echo "Deploy Job"
+          echo "Hello"
 # Orchestrate our job run sequence
 workflows:
   build_and_test:
