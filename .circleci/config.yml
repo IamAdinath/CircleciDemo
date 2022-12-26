@@ -15,7 +15,8 @@ jobs:
       - checkout
       - run: echo "this is the test job"
   deploy:
-    - run:  
+    steps:
+      - run:  
         name: Deploy Job
         command: |
           echo "hello before deploy job"
