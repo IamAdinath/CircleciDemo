@@ -16,8 +16,7 @@ jobs:
       - run: echo "this is the test job"
   deploy:
     steps:
-      - run:  
-          name: Deploy Job
+      - run:  echo "Deploy Job"
 # Orchestrate our job run sequence
 workflows:
   build_and_test:
