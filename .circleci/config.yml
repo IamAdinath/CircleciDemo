@@ -18,7 +18,8 @@ jobs:
     docker:
       - image: cimg/python:3.8
     steps:
-      - run: 
+      - checkout
+      - run:
         name: deploy job
         command: |
           echo "Deploy Job"
