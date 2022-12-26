@@ -20,4 +20,5 @@ workflows:
     jobs:
       - build
       - test
+  deploy:
       - deploy
